@@ -1,5 +1,5 @@
 import XCTest
-@testable import DIN5573
+@testable import DIN5573Kit
 
 final class DIN5573Tests: XCTestCase {
     func testProfile() throws {
