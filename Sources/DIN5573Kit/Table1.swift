@@ -56,6 +56,7 @@ enum Table1 {
     ///
     /// - Parameter sr: The S<sub>R</sub> for which to return the content of Table 1.
     /// - Returns: The running surface co-ordinates for the given `sr`.
+    // swiftlint:disable:next cyclomatic_complexity
     private static func table1(sr: Int) -> [Double] {
         assert(DIN5573.validSR.contains(sr))
         switch sr {
@@ -81,6 +82,7 @@ enum Table1 {
     }
 
 
+    // swiftlint:disable:next cyclomatic_complexity
     private static func table1a(sr: Int) -> [Double] {
         assert(DIN5573.validSR.contains(sr))
         switch sr {
@@ -106,6 +108,7 @@ enum Table1 {
     }
 
 
+    // swiftlint:disable:next cyclomatic_complexity
     private static func table1b(sr: Int) -> [Double] {
         assert(DIN5573.validSR.contains(sr))
         switch sr {

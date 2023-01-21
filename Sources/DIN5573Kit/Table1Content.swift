@@ -1,3 +1,4 @@
+// swiftlint:disable file_length
 //
 //  Table1Content.swift
 //  
@@ -80,7 +81,6 @@ extension Table1 {
                                       -1.97, -2.04, -2.10, -2.17, -2.24, -2.30, -2.37, -2.44, -2.50, -2.57,
                                       -2.64]
 
-
     /// The content of table 1 for a front-to-front distance of 1424 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -103,7 +103,6 @@ extension Table1 {
                                       -1.32, -1.39, -1.45, -1.52, -1.59, -1.65, -1.72, -1.79, -1.85, -1.92,
                                       -1.99, -2.05, -2.12, -2.19, -2.25, -2.32, -2.39, -2.45, -2.52, -2.59,
                                       -2.65]
-
 
     /// The content of table 1 for a front-to-front distance of 1423 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
@@ -128,7 +127,6 @@ extension Table1 {
                                       -2.00, -2.07, -2.14, -2.20, -2.27, -2.34, -2.40, -2.47, -2.54, -2.60,
                                       -2.67]
 
-
     /// The content of table 1 for a front-to-front distance of 1422 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -152,7 +150,6 @@ extension Table1 {
                                       -2.02, -2.09, -2.16, -2.22, -2.29, -2.36, -2.42, -2.49, -2.56, -2.62,
                                       -2.69]
 
-
     /// The content of table 1 for a front-to-front distance of 1421 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -166,7 +163,7 @@ extension Table1 {
                                        3.18,  3.05,  2.92,  2.79,  2.68,  2.56,  2,46,  2.35,  2.25,  2.16,
                                        2.06,  1.98,  1.89,  1.81,  1.73,  1.65,  1.51,  1.38,  1.25,
                                        1.13,  1.03,  0.92,  0.83,  0.74,  0.66,  0.58,  0.51,  0.44,
-                                       0.38,  0.32,  0.27,  0.22, 0.18,  0.13,  0.10,  0.06,  0.03,
+                                       0.38,  0.32,  0.27,  0.22,  0.18,  0.13,  0.10,  0.06,  0.03,
                                        0.00,
                                       -0.03, -0.05, -0.07, -0.09, -0.11, -0.12, -0.13, -0.15, -0.16,
                                       -0.17, -0.18, -0.19, -0.19, -0.20, -0.21, -0.22, -0.24, -0.25, -0.27,
@@ -175,7 +172,6 @@ extension Table1 {
                                       -1.38, -1.44, -1.51, -1.58, -1.64, -1.71, -1.78, -1.84, -1.91, -1.98,
                                       -2.04, -2.11, -2.18, -2.24, -2.31, -2.38, -2.44, -2.51, -2.58, -2.64,
                                       -2.71]
-
 
     /// The content of table 1 for a front-to-front distance of 1420 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
@@ -200,7 +196,6 @@ extension Table1 {
                                       -2.06, -2.13, -2.20, -2.26, -2.33, -2.40, -2.46, -2.53, -2.60, -2.66,
                                       -2.73]
 
-
     /// The content of table 1 for a front-to-front distance of 1419 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -223,7 +218,6 @@ extension Table1 {
                                       -1.42, -1.48, -1.55, -1.62, -1.68, -1.75, -1.82, -1.88, -1.95, -2.02,
                                       -2.08, -2.15, -2.22, -2.28, -2.35, -2.42, -2.48, -2.55, -2.62, -2.68,
                                       -2.75]
-
 
     /// The content of table 1 for a front-to-front distance of 1418 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
@@ -271,7 +265,6 @@ extension Table1 {
                                        -2.13, -2.19, -2.26, -2.33, -2.39, -2.46, -2.53, -2.59, -2.66, -2.73,
                                        -2.79]
 
-
     /// The content of table 1 for a front-to-front distance of 1416 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -294,7 +287,6 @@ extension Table1 {
                                        -1.48, -1.55, -1.62, -1.68, -1.75, -1.82, -1.88, -1.95, -2.02, -2.08,
                                        -2.15, -2.22, -2.28, -2.35, -2.42, -2.48, -2.55, -2.62, -2.68, -2.75,
                                        -2.82]
-
 
     /// The content of table 1 for a front-to-front distance of 1415 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
@@ -319,7 +311,6 @@ extension Table1 {
                                        -2.17, -2.24, -2.31, -2.37, -2.44, -2.51, -2.57, -2.64, -2.71, -2.77,
                                        -2.84]
 
-
     /// The content of table 1 for a front-to-front distance of 1414 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -342,7 +333,6 @@ extension Table1 {
                                        -1.53, -1.60, -1.66, -1.73, -1.80, -1.86, -1.93, -2.00, -2.06, -2.13,
                                        -2.20, -2.26, -2.33, -2.40, -2.46, -2.53, -2.60, -2.66, -2.73, -2.80,
                                        -2.86]
-
 
     /// The content of table 1 for a front-to-front distance of 1413 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
@@ -367,7 +357,6 @@ extension Table1 {
                                        -2.22, -2.29, -2.36, -2.42, -2.49, -2.56, -2.62, -2.69, -2.76, -2.82,
                                        -2.89]
 
-
     /// The content of table 1 for a front-to-front distance of 1412 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -391,7 +380,6 @@ extension Table1 {
                                        -2.25, -2.31, -2.38, -2.45, -2.51, -2.58, -2.65, -2.71, -2.78, -2.85,
                                        -2.91]
 
-
     /// The content of table 1 for a front-to-front distance of 1406 mm.
     /// The values are given from -60 to -22 mm lateral position in 0.5-mm-steps,
     /// and from 22 mm to 60 mm in 1-mm-steps.
@@ -414,5 +402,4 @@ extension Table1 {
                                        -1.74, -1.81, -1.87, -1.94, -2.01, -2.07, -2.14, -2.21, -2.27, -2.34,
                                        -2.41, -2.47, -2.54, -2.61, -2.67, -2.74, -2.81, -2.87, -2.94, -3.01,
                                        -3.07]
-
 }

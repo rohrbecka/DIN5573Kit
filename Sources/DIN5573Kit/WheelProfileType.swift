@@ -14,7 +14,7 @@ import Foundation
 /// depends on the wheel diameter. for wheels up to but not including 760 mm diameter
 /// the profile 'EH' should be chosen, for wheels with 760 mm or larger diameter 'E' shall be
 /// chosen.
-public enum WheelProfileType {
+public enum WheelProfileType: CaseIterable {
     /// The profile type for wheels with a diameter larger or equal to 760 mm.
     case e
 

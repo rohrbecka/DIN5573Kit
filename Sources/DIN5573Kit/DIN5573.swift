@@ -66,9 +66,9 @@ public enum DIN5573 {
                                                        main: Table1.runningSurface(sr: sr),
                                                        outer: Table1.outerEdge(width: width, sr: sr))
         case .eh: profilePoints = []
-//            profilePoints.generateProfilePoints(inner: Table4.profile(ar: ar),
-//                                               main: Table3.runningSurface(sr: sr),
-//                                               outer: Table3.outerEdge(width: width))
+            profilePoints = generateProfilePoints(inner: Table4.profile(ar: ar),
+                                                  main: Table3.runningSurface(sr: sr),
+                                                  outer: Table3.outerEdge(width: width, sr: sr))
         }
         return WheelProfile(type: type, sr: sr, ar: ar, width: width, profile: profilePoints)
     }
@@ -87,7 +87,30 @@ public enum DIN5573 {
     ///   - outer: The co-ordinates of the outer edge of the profile, which may be directly
     ///             connected to the `main` part.
     private static func generateProfilePoints(inner: [CGPoint], main: [CGPoint], outer: [CGPoint]) -> [CGPoint] {
-        return inner + main + outer
-        // TODO: implement correct combination of inner and main.
+        return concatenate(inner, main) + outer
+    }
+
+
+
+    private static func concatenate(_ lhs: [CGPoint], _ rhs: [CGPoint]) -> [CGPoint] {
+        guard
+            let lhsFirst = lhs.firstIndex(where: {$0.x == rhs[0].x}),
+            let lhsLastPoint = lhs.last,
+            let rhsLast = rhs.firstIndex(where: {$0.x == lhsLastPoint.x}) else {
+                return lhs + rhs
+        }
+        let lhsRange = lhsFirst..<lhs.endIndex
+        let rhsRange = 0...rhsLast
+
+        assert(lhsRange.count == rhsRange.count)
+
+        guard
+            let rhsIndexAfterIntersection = rhsRange.first(where: {
+                rhs[$0].y <= lhs[$0 + lhsFirst].y
+            }) else {
+            return lhs + rhs
+        }
+
+        return Array(lhs[0..<rhsIndexAfterIntersection + lhsFirst] + rhs[rhsIndexAfterIntersection..<rhs.endIndex])
     }
 }

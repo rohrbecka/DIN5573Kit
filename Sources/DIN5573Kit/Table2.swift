@@ -22,6 +22,10 @@ enum Table2 {
                                  28.00, 28.00, 28.00, 28.00, 28.00, 28.00]
 
 
+
+    /// Returns the inner flange profile for profile E according to Table 2 in DIN 5573:1995.
+    ///
+    /// - Parameter ar: The wheel back-to-back distance in mm.
     internal static func profile(ar: Int) -> [CGPoint] {
         assert(DIN5573.validAR.contains(ar))
         let offset = -(1360.0 - Double(ar))/2.0

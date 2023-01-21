@@ -7,8 +7,6 @@
 
 import Foundation
 
-// swiftlint:disable comma
-
 extension Table1 {
 
     /// The content of table 1b for a front-to-front distance of 1427 mm for a wheel width of 140 mm.
