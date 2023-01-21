@@ -15,19 +15,19 @@ public struct WheelProfile {
     /// The type of the wheel profile.
     ///
     /// DIN 5573 defines the E and the EH wheel profile type.
-    let type: WheelProfileType
+    public let type: WheelProfileType
 
     /// The front-to-front distance in mm.
-    let sr: Int
+    public let sr: Int
 
     /// The back-to-back distance in mm.
-    let ar: Int
+    public let ar: Int
 
     /// The wheel width in mm.
-    let width: Int
+    public let width: Int
 
     /// The co-ordinates of the profile.
-    let profile: [CGPoint]
+    public let profile: [CGPoint]
 }
 
 
